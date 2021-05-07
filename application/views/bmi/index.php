@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="<?=base_url('assets/bootstrap/css/bootstrap.min.css')?>">
-    <title>Praktikum | CI MVC</title>
+    <title>Praktikum | CI MVC | BMI</title>
 </head>
 <body>
-    <div class="container">
-        <h4>Daftar BMI Pasien</h4>
-        <table class="table table-bordered text-center mt-3">
+    <div class="container pt-2">
+        <h4>Daftar BMI Pasien <a href="<?=base_url('index.php/pasien')?>" class="btn btn-primary">Daftar Pasien</a></h4>
+        <table class="table table-bordered text-center">
             <tr>
                 <th>#</th>
                 <th>Tanggal Periksa</th>
@@ -38,6 +38,7 @@
             <?php endforeach; ?>
         </table>
     </div>
+
     <script src="<?=base_url('assets/bootstrap/js/bootstrap.min.js')?>"></script>
 </body>
 </html>
